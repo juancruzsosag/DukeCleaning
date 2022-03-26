@@ -1,3 +1,14 @@
+## Elements used
+
+- SASS
+- React Bootstrap for UI elements
+    https://react-bootstrap.github.io
+- EmailJS for Form Handler
+    https://sweetalert2.github.io
+- React Icons for Icons
+    https://react-icons.github.io/react-icons/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
