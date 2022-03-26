@@ -4,7 +4,7 @@
 - React Bootstrap for UI elements
     https://react-bootstrap.github.io
 - EmailJS for Form Handler
-    https://sweetalert2.github.io
+    https://www.emailjs.com
 - React Icons for Icons
     https://react-icons.github.io/react-icons/
 
