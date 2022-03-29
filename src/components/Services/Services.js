@@ -1,0 +1,11 @@
+import "./Services.scss";
+import React from "react"; 
+
+
+
+export const Services = () =>{
+    return(
+        <div>
+        </div>
+    );
+}
