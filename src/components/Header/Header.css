@@ -1,0 +1,35 @@
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 16px 16px;
+
+    position: absolute;
+    width: 390px;
+    height: 61px;
+    left: 0px;
+
+    background: #ffffff;
+  }
+  .header-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 339px;
+    height: 51px;
+    left: 16px;
+    top: 7px;
+  }
+  img {
+    position: static;
+    width: 227px;
+    height: 39.14px;
+    left: 56px;
+    top: 5.93px;
+  }
+}

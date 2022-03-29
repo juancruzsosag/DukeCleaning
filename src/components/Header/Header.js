@@ -1,11 +1,15 @@
-import "./Footer.scss";
+import "./Header.css";
 import React from "react"; 
 
 
 
-export const Footer = () =>{
+
+export const Header = () =>{
     return(
-        <div>
+        <div className="header">
+            <div className="header-img">
+            <img src="./images/thedukerey-logo.svg" alt="" srcset="" />
+            </div>
         </div>
     );
 }
