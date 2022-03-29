@@ -1,11 +1,11 @@
-import "./Header.scss";
+import "./CoverPage.css";
 import React from "react"; 
 
 
 
-export const Header = () =>{
+export const CoverPage = () =>{
     return(
-        <div>
+        <div className="">
         </div>
     );
 }
