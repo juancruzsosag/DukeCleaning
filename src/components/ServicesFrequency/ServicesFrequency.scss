@@ -1,0 +1,55 @@
+#ServicesFrequency{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 32px 0px;
+    h2{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        color: #41826C;
+        text-transform: uppercase;
+        font-size: 24px;
+        span{
+            color: #1D3B31;
+        }
+        margin-bottom: 32px;
+    }
+
+    .frequencyTitle{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #41826C;
+        
+    }
+    .frq-first-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .frq-second-row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .frequencyItem{
+        padding: 16px;
+        width: 240px;
+    }
+
+    .frequency-container{
+        width: 60%;
+    }
+
+}

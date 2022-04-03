@@ -1,0 +1,31 @@
+.serviceCard{
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 333px;
+    height: 194px;
+    padding: 30px;
+    margin: 20px 0;
+    margin-top: 0;
+    .cardContent{
+        img{
+            width: 79px;
+            margin-bottom: 5px;
+        }
+        .cardTitle{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            text-align: center;
+            color: #41826C;
+        }
+        .cardDescription{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
+            color: #706A59;
+        }
+    }
+}
