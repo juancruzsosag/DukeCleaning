@@ -1,11 +1,11 @@
 import "./ServicesFrequency.scss";
 import React from "react"; 
 import { FrequencyItem } from "./FrequencyItem";
-import TwiceMonth from "./FrequencyImg/twoPerMonth.svg";
-import TwiceWeek from "./FrequencyImg/twoPerWeek.svg";
-import OneTime from "./FrequencyImg/oneTime.svg";
-import Daily from "./FrequencyImg/daily.svg";
-import Weekly from "./FrequencyImg/weekly.svg";
+import TwiceMonth from "../../assets/Frequency/TwoPerMonth.svg";
+import TwiceWeek from "../../assets/Frequency/TwoPerWeek.svg";
+import OneTime from "../../assets/Frequency/OneTime.svg";
+import Daily from "../../assets/Frequency/Daily.svg";
+import Weekly from "../../assets/Frequency/Weekly.svg";
 
 export const ServicesFrequency = () =>{
     return(

@@ -1,10 +1,10 @@
 import React from "react"; 
-import SpecialDeepClean from "./servicesImg/specialdeepclean.svg";
-import PressureClean from "./servicesImg/pressureclean.svg";
-import Janitorial from "./servicesImg/janitorial.svg";
-import CommercialDisinfection from "./servicesImg/disinfection.svg";
-import WindowClean from "./servicesImg/windowclean.svg";
-import PostRefurbishing from "./servicesImg/postrefurbishing.svg";
+import SpecialDeepClean from "../../../assets/Services/specialdeepclean.svg";
+import PressureClean from "../../../assets/Services/pressureclean.svg";
+import Janitorial from "../../../assets/Services/janitorial.svg";
+import CommercialDisinfection from "../../../assets/Services/disinfection.svg";
+import WindowClean from "../../../assets/Services/windowclean.svg";
+import PostRefurbishing from "../../../assets/Services/postrefurbishing.svg";
 import { Col, Container, Row, Grid } from "react-bootstrap";
 import { ServiceCard } from "../ServiceCard/ServiceCard";
 
