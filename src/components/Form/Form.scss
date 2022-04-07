@@ -45,6 +45,7 @@
             margin: 8px 0;
         }
         input{
+            caret-color: #41826C;
             border-color: transparent;
             width: 80%;
             &::placeholder{
@@ -58,6 +59,111 @@
             margin: 5px 0;
             width: 160px;
             background-color: #E8BD4F;
+
+            &:hover{
+                animation: submit-hover;
+                animation-duration: .5s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes submit-hover{
+                0% {
+                background-color: #E8BD4F;
+                }
+                100% {
+                background-color: #C8A039;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+// MEDIA QUERIES //
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 100px) and (max-device-width : 319px) {
+    #formSection{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img{
+            margin-bottom: 16px;
+            width: 90%;
+        }
+        form{
+            width: 90%;
         }
     }
 }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #formSection{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img{
+            margin-bottom: 16px;
+            width: 90%;
+        }
+        form{
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+    #formSection{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img{
+            margin-bottom: 16px;
+            width: 90%;
+        }
+        form{
+            width: 90%;
+        }
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #formSection{
+        img{
+            width: 80%;
+        }
+        form{
+            width: 30%;
+        }
+        #btn-submit-form{
+            padding: 8px 15px !important; //check important
+        }
+        hr{
+            margin: 4px 0 !important;
+        }
+    }
+}
+// /* iPads (landscape) ----------- */
+// @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+//   /* Styles */
+// }
+// /* iPads (portrait) ----------- */
+// @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+//   /* Styles */
+// }
+// /* Desktops and laptops ----------- */
+// @media only screen and (min-width : 1224px) {
+//   /* Styles */
+// }
+// /* Large screens ----------- */
+// @media only screen and (min-width : 1824px) {
+//   /* Styles */
+// }

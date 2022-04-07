@@ -10,14 +10,14 @@ import Weekly from "./FrequencyImg/weekly.svg";
 export const ServicesFrequency = () =>{
     return(
         <div id="ServicesFrequency">
-            <h2>Our team adapts to cover your <span>specific needs</span>.</h2>
+            <h2 id="section-title">Our team adapts to cover your <span>specific needs</span>.</h2>
             <div className="frequency-container">
-                <div className="frq-first-row">
+                <div className="row">
                     <FrequencyItem title="Daily" img={Daily}  />
                     <FrequencyItem title="Twice a week" img={TwiceWeek}  />
                     <FrequencyItem title="Weekly" img={Weekly}  />
                 </div>
-                <div className="frq-second-row">
+                <div className="row">
                     <FrequencyItem title="Twice a month" img={TwiceMonth}  />
                     <FrequencyItem title="One-time deep cleaning" img={OneTime}  />
                 </div>

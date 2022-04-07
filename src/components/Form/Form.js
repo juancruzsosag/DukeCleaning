@@ -8,7 +8,7 @@ export const Form = () =>{
     return(
         <div id="formSection">
             <div>
-                <h2>Give us a call or fill<br/> out the form <span>today</span>!</h2>
+                <h2 id="section-title">Give us a call or fill<br/> out the form <span>today</span>!</h2>
                 <img src={formPhoto} />
             </div>
 
@@ -63,7 +63,7 @@ export const Form = () =>{
                 />
                 <hr />
 
-                <button type="submit" className="btn btn-submit-form"> <IoPaperPlane/> Submit</button>
+                <button type="submit" className="btn btn-submit-form" id="btn-submit-form"> <IoPaperPlane/> Submit</button>
             </form>
         </div>
         
