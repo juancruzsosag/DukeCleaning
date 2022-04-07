@@ -1,6 +1,6 @@
 import "./WhatsApp.scss";
 import React from "react";
-import WppIcon from "../WhatsApp/wpp-corner.svg";
+import WppIcon from "../../assets/wpp-corner.svg";
 
 
 
