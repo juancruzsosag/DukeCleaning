@@ -5,7 +5,7 @@ import Janitorial from "../../../assets/Services/janitorial.svg";
 import CommercialDisinfection from "../../../assets/Services/disinfection.svg";
 import WindowClean from "../../../assets/Services/windowclean.svg";
 import PostRefurbishing from "../../../assets/Services/postrefurbishing.svg";
-import { Col, Container, Row, Grid } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { ServiceCard } from "../ServiceCard/ServiceCard";
 
 export const ServicesList = () =>{
