@@ -1,11 +1,15 @@
 import "./WhatsApp.scss";
-import React from "react"; 
+import React from "react";
+import WppIcon from "../../assets/wpp-corner.svg";
 
 
 
 export const WhatsApp = () =>{
     return(
-        <div>
+        <div id="fixedTab">
+            <a href="" title="WhatsApp" className="d-flex justify-content-end"> 
+                <img src={WppIcon} className="w-75" alt="whatsapp" id="img-whatsapp"/>
+            </a>
         </div>
     );
 }

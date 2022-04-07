@@ -1,0 +1,108 @@
+#ServicesFrequency{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 32px 0px;
+    h2{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        color: #41826C;
+        text-transform: uppercase;
+        font-size: 24px;
+        span{
+            color: #1D3B31;
+        }
+        margin-bottom: 32px;
+    }
+
+    .frequencyTitle{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #41826C;
+        
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .frequencyItem{
+        padding: 16px;
+        width: 240px;
+    }
+
+    .frequency-container{
+        width: 60%;
+    }
+
+}
+
+// MEDIA QUERIES //
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 100px) and (max-device-width : 319px) {
+    #ServicesFrequency{
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .frequencyTitle{
+            font-size: 16px;
+        }
+    }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #ServicesFrequency{
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .frequencyTitle{
+            font-size: 16px;
+        }
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+    #ServicesFrequency{
+        .frequency-container{
+            width: 100%;
+        }
+    }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+}
