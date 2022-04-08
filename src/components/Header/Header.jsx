@@ -11,10 +11,10 @@ export const Header = () => {
     <Navbar>
       <Container fluid className="navbar-header">
         <Row>
-          <Col xxl={4} className=" display-none" style={{
+          <Col  className=" display-none" style={{
           backgroundColor: 'red',
         }}></Col>
-          <Col xxl={4} className="header-img" style={{
+          <Col  className="header-img" style={{
           backgroundColor: 'green',
         }}>
             <Nav>
@@ -23,7 +23,7 @@ export const Header = () => {
               </Navbar.Brand>
             </Nav>
           </Col>
-          <Col xxl={4} className="display-none" style={{
+          <Col  className="display-none" style={{
           backgroundColor: 'yellow',
         }}>
             <Nav>
