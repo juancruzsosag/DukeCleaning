@@ -45,3 +45,11 @@
     }
   }
 }
+
+@media only screen and (min-device-width : 601px) and (max-device-width : 1024px) {
+  #coverDescription{
+    h1{
+      width: auto;
+    }
+  }
+}
