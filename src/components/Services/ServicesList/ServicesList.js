@@ -9,8 +9,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ServiceCard } from "../ServiceCard/ServiceCard";
 
 export const ServicesList = () =>{
-    //intentar pasar cada service como un objeto desde un js
-    //cambiar a grid manual
+
     return(
         <div>
             <Container >
