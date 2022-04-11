@@ -4,6 +4,22 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 24px 0;
+
+    small{
+        font-family: 'Roboto';
+        font-style: normal;
+        color: lighten(#000000, 70%)
+    }
+
+    #form-alert{
+        padding: 8px;
+        text-align: center;
+        p{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
     h2{
         text-transform: uppercase;
         text-align: center;
