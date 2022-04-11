@@ -22,14 +22,14 @@ export const Header = () => {
           </Col>
           <Col className="display-none">
             <div className="d-flex flex-row justify-content-end align-items-center">
-              <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=542613733585" alt="Button redirects to Whatsapp">
+              <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=17865532884&text=Hello,%20Duke%20Rey%20Cleaning!%0AI%20want%20to%20get%20some%20information%20about…" alt="Button redirects to Whatsapp">
                 <Button className="header-wpbutton me-1">
                   <div className="whatsapp-logo  button-content">
                     <RiWhatsappFill /> WhatsApp
                   </div>
                 </Button>
               </a>
-              <a href="tel:+576015000000" data-rel="external" alt="Button redirects to call">
+              <a href="el:17865532884" data-rel="external" alt="Button redirects to call">
                 <Button className="header-callbutton">
                   <div className="button-content">
                     <IoCall /> Call us

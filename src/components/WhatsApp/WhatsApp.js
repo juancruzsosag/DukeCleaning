@@ -42,7 +42,7 @@ export const WhatsApp = () =>{
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={MessageLogo} id="message-logo" alt="Logo"/>
+                    {/* <img src={MessageLogo} id="message-logo" alt="Logo"/> */}
                     <MdWavingHand color="#41826C"  fontSize="3rem"/>
                     <h3>Hi there!</h3>
                     <h4>Ask us anything</h4>
