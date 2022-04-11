@@ -99,7 +99,7 @@ export const Form = () =>{
 
     return(
         <div id="formSection">
-            <div>
+            <div className="form-title-img">
                 <h2 id="section-title">Give us a call or fill<br/> out the form <span>today</span>!</h2>
                 <img src={formPhoto} alt="Cleaning team illustration" />
             </div>
