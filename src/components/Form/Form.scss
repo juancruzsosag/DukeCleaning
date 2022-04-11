@@ -20,6 +20,31 @@
         }
     }
 
+    .invalid{
+        border: solid 2px !important;
+        border-color: darken(red, 5%) !important;
+        border-radius: 10px !important;
+    }
+
+    .valid{
+        border: solid 2px !important;
+        border-color: darken(green, 5%) !important;
+        border-radius: 10px !important;
+    }
+
+    @mixin inputs {
+        caret-color: #41826C;
+        border-color: transparent;
+        width: 80%;
+        &::placeholder{
+            font-family: 'Roboto';
+            color: rgba(60, 60, 67, 0.6);
+        }
+    }
+    textarea{
+        @include inputs;
+    }
+
     h2{
         text-transform: uppercase;
         text-align: center;
@@ -61,17 +86,12 @@
             margin: 8px 0;
         }
         input{
-            caret-color: #41826C;
-            border-color: transparent;
-            width: 80%;
-            &::placeholder{
-                font-family: 'Roboto';
-                color: rgba(60, 60, 67, 0.6);
-            }
+            @include inputs;
         }
         .btn-submit-form{
             color: white;
             padding: 13px 20px;
+            border-radius: 10px;
             margin: 5px 0;
             width: 160px;
             background-color: #E8BD4F;
@@ -160,7 +180,7 @@
             width: 30%;
         }
         #btn-submit-form{
-            padding: 8px 15px !important; //check important
+            padding: 8px 15px;
         }
         hr{
             margin: 4px 0 !important;

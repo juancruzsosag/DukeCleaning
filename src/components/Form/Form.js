@@ -10,12 +10,11 @@ init("ObIADgxeZKslCGMo_");
 
 
 export const Form = () =>{
-
     const form = useRef();
 
     const [values, setValues] = useState({
         company: '',
-        name: '',
+        firstName: '',
         lastName: '',
         email: '',
         phoneNumber: '',
@@ -45,9 +44,9 @@ export const Form = () =>{
         if(variant === "success"){
             alertMessage = "Your message submitted succesfully";
         } else if (variant === "warning"){
-            alertMessage = "Warning";
+            alertMessage = "Error: please check your connection and try again";
         } else if (variant === "danger"){
-            alertMessage = "Danger";
+            alertMessage = "Please fill all the required fields before submitting";
         }
 
         return(
@@ -70,13 +69,21 @@ export const Form = () =>{
 
     const sendEmail = (e) => {
         e.preventDefault();
-        // if (!validateForm(values)) { return }
+        let formIsValid = false;
+        // const fields = [values.name,values.lastName,values.email,values.phoneNumber,values.message];
+        // let fieldsIsValid = [false,false,false,false,false]
+        // // if (!validateForm(values)) {
+        // //     setStatus('danger');
+        // //     return
+        // //}
+
+
         emailjs.sendForm('pruebaEmail', 'template_test_duke', form.current,'ObIADgxeZKslCGMo_')
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 setValues({
                     company: '',
-                    name: '',
+                    firstName: '',
                     lastName: '',
                     email: '',
                     phoneNumber: '',
@@ -97,7 +104,6 @@ export const Form = () =>{
                 <img src={formPhoto} alt="Cleaning team illustration" />
             </div>
 
-            
 
             <form onSubmit={sendEmail} ref={form} >
                 <p className="form-title">Get your cleaning quote</p>
@@ -113,7 +119,7 @@ export const Form = () =>{
                     <hr />
                 
                     <input
-                        name="name"
+                        name="firstName"
                         type="text"
                         placeholder="Name"
                         onChange={handleInputChange}
@@ -161,14 +167,10 @@ export const Form = () =>{
                     />
                     <hr />
                 
-                    <input
-                        name="message"
-                        type="text"
-                        placeholder="Message or additional info "
-                        onChange={handleInputChange}
+                    <textarea name="message" rows={1} onChange={handleInputChange}
                         value={values.message}
-                        required
-                    />
+                        required placeholder="Message or additional info">
+                    </textarea>
                     <hr />
 
                 <button type="submit" className="btn btn-submit-form" id="btn-submit-form"> <IoPaperPlane/> Submit</button>
