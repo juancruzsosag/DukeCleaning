@@ -126,6 +126,12 @@
             .btn-icon{
                 margin-right: 2px
             }
+
+            &:hover {
+                animation: wpbutton-hover;
+                animation-duration: .5s;
+                animation-fill-mode: forwards;
+            }
         }
     
         #btn-modal-call{
@@ -135,7 +141,31 @@
             .btn-icon{
                 margin-right: 4px
             }
+
+            &:hover {
+                animation: callbutton-hover;
+                animation-duration: .5s;
+                animation-fill-mode: forwards;
+            }
         }
+    }
+}
+
+@keyframes callbutton-hover {
+    0% {
+        background-color: #8b00a8;
+    }
+    100% {
+        background-color: #68127a;
+    }
+}
+
+@keyframes wpbutton-hover {
+    0% {
+        background-color: #34c759;
+    }
+    100% {
+        background-color: #41826c;
     }
 }
 
