@@ -1,13 +1,173 @@
-#fixedTab{
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    right: 1.5rem;
-    bottom: 1rem;
-    z-index: 100;
-    a {
-        background-color: unset;
-        height: 6rem;
-        width: 6rem;
+
+#whatsapp-section{
+    #fixedTab{
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1rem;
+        z-index: 100;
+        a {
+            background-color: unset;
+            height: 6rem;
+            width: 6rem;
+        }
+    }   
+}
+
+.modal-dialog-centered{
+    justify-content: center !important;
+}
+
+.modal{
+    hr{
+        border-left:    white 2px solid ;
+        height:         50%;
+        width:          2px;    
+    }
+
+    a{
+        width: 40%;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:visited{
+            color: #FFFFFF;
+        }
+    }
+
+    #message-logo{
+        display: none;
+    }
+
+    .modal-title{
+        width: 100%;
+
+        .tel-link{
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            &:hover{
+                color: darken(#FFFFFF, 5%);
+            }
+        }
+        
+        .tel-language{
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin: 0;
+        }
+    }
+
+    .modal-dialog-centered{
+        justify-content: center !important;
+    }
+    .modal-content{
+        width: 400px;
+        background: linear-gradient(180deg, #41826C 39.06%, #34C759 100%);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) ;
+        border-radius: 15px ;
+        padding: 8px;
+    }
+
+    .modal-body{
+        background: #FFFFFF;
+        border-radius: 0px 0px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        h3{
+            font-weight: 900;
+            font-size: 24px;
+            color: #41826C;
+        }
+
+        h4{
+            font-weight: 900;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #41826C;
+        }
+        p{
+            font-weight: 400;
+            font-size: 13px;
+            color: #706A59;
+            padding-bottom: 0;
+        }
+    }
+
+    #modal-button-section{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @mixin btn-modal{
+            border-radius: 60px;
+            padding: 12px 18px;
+            width: 100%;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center
+        }
+        #btn-modal-wpp{
+            @include btn-modal;
+            background: #34C759;
+            border-color: #34C759 ;
+            .btn-icon{
+                margin-right: 2px
+            }
+        }
+    
+        #btn-modal-call{
+            @include btn-modal;
+            background: #8B00A8;
+            border-color: #8B00A8;
+            .btn-icon{
+                margin-right: 4px
+            }
+        }
     }
 }
+
+// MEDIA QUERIES //
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 100px) and (max-device-width : 319px) {
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+}
+
