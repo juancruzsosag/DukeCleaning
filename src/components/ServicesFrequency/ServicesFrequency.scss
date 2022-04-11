@@ -40,6 +40,13 @@
     .frequencyItem{
         padding: 16px;
         width: 240px;
+
+        .frequencyContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .frequency-container{
@@ -97,6 +104,9 @@
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
+}
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1223px) {
+
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {

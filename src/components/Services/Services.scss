@@ -85,10 +85,9 @@
 
     .serviceCard{
         width: 95% !important;
-        height: 210px;
+        height: 280px;
     }
 }
-
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -123,10 +122,33 @@
         }
     }
 }
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  /* Styles */
+
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1223px) {
+    #services{
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .col{
+            display: flex;
+            justify-content: center;
+        }
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .serviceCard{
+        width: 95% !important;
+        height: 210px;
+    }
 }
+
+
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
   /* Styles */
