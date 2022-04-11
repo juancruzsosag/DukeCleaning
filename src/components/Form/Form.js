@@ -1,25 +1,94 @@
 import "./Form.scss";
-import React , { useRef } from "react"; 
+import React , { useRef, useState, useEffect } from "react"; 
 import formPhoto from "../../assets/formPhoto.svg";
 import {IoPaperPlane} from "react-icons/io5";
+import { validateForm } from '../../helpers/validateForm';
 import emailjs from '@emailjs/browser';
-import { validateForm } from '../../helpers/validateForm'
+import{ init } from '@emailjs/browser';
+import Alert from 'react-bootstrap/Alert'
+init("ObIADgxeZKslCGMo_");
 
 
 export const Form = () =>{
 
     const form = useRef();
 
+    const [values, setValues] = useState({
+        company: '',
+        name: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        address: '',
+        message: '',
+    });
+
+    const [status, setStatus] = useState(''); 
+    useEffect(() =>{
+        if(status){
+            setTimeout(() =>{
+                setStatus('');
+            }, 2000)
+        }
+    }, [status]);
+
+
+    const numberRegExp = (number) =>{
+        let cleanNumber = parseInt(number.replace(/^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g));
+        console.log(cleanNumber)
+        return(isNaN(cleanNumber));
+    }
+
+    const renderAlert = (variant) =>{
+        let alertMessage;
+    
+        if(variant === "success"){
+            alertMessage = "Your message submitted succesfully";
+        } else if (variant === "warning"){
+            alertMessage = "Warning";
+        } else if (variant === "danger"){
+            alertMessage = "Danger";
+        }
+
+        return(
+            <Alert variant={variant} id="form-alert">
+                <p> {alertMessage} </p>
+            </Alert>
+        );
+    };
+
+    const handleInputChange = (e) => {        
+        setValues(values => ({
+            ...values,
+            [e.target.name]: [e.target.value]
+        }))
+
+        // if(!validateForm(values)){
+
+        // }
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-        });
-    };
+        // if (!validateForm(values)) { return }
+        emailjs.sendForm('pruebaEmail', 'template_test_duke', form.current,'ObIADgxeZKslCGMo_')
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                setValues({
+                    company: '',
+                    name: '',
+                    lastName: '',
+                    email: '',
+                    phoneNumber: '',
+                    address: '',
+                    message: '',
+                });
+                setStatus('success');
+            }, function(error) {
+                console.log('FAILED...', error);
+                setStatus('warning')
+            });
+    }
 
     return(
         <div id="formSection">
@@ -28,56 +97,79 @@ export const Form = () =>{
                 <img src={formPhoto} alt="Cleaning team illustration" />
             </div>
 
-            <form ref={form} onSubmit={sendEmail}>
-                <p className="form-title">Get your cleaning quote</p>
-                <input
-                    name="company-name"
-                    type="text"
-                    placeholder="Company Name"
-                />
-                <hr />
             
-                <input
-                    name="name"
-                    type="text"
-                    placeholder="Name"
-                />
-                <hr />
-            
-                <input
-                    name="last-name"
-                    type="text"
-                    placeholder="Last Name"
-                />
-                <hr />
-            
-                <input
-                    name="email"
-                    type="text"
-                    placeholder="E-mail"
-                />
-                <hr/>
-            
-                <input
-                    name="phone-number"
-                    type="text"
-                    placeholder="Phone number"
-                />
-                <hr />
 
-                <input
-                    name="address"
-                    type="text"
-                    placeholder="Address"
-                />
-                <hr />
-            
-                <input
-                    name="message"
-                    type="text-area"
-                    placeholder="Message or additional info"
-                />
-                <hr />
+            <form onSubmit={sendEmail} ref={form} >
+                <p className="form-title">Get your cleaning quote</p>
+                {status && renderAlert(status)}
+
+                    <input
+                        name="company"
+                        type="text"
+                        placeholder="Company Name"
+                        onChange={handleInputChange}
+                        value={values.company}
+                    />
+                    <hr />
+                
+                    <input
+                        name="name"
+                        type="text"
+                        placeholder="Name"
+                        onChange={handleInputChange}
+                        value={values.name}
+                        required
+                    />
+                    <hr />
+                
+                    <input
+                        name="lastName"
+                        type="text"
+                        placeholder="Last name"
+                        onChange={handleInputChange}
+                        value={values.lastName}
+                        required
+                    />
+                    <hr />
+                
+                    <input
+                        name="email"
+                        type="email"
+                        placeholder="E-mail"
+                        onChange={handleInputChange}
+                        value={values.email}
+                        required
+                    />
+                    <hr/>
+
+                    <input
+                        name="phoneNumber"
+                        type="tel"
+                        placeholder="Phone number"
+                        onChange={handleInputChange}
+                        value={values.phoneNumber}
+                        required
+                    />
+                    <hr />
+
+                    <input
+                        name="address"
+                        type="text"
+                        placeholder="Address"
+                        onChange={handleInputChange}
+                        value={values.address}
+                    />
+                    <hr />
+                
+                    <input
+                        name="message"
+                        type="text"
+                        placeholder="Message or additional info "
+                        onChange={handleInputChange}
+                        value={values.message}
+                        required
+                    />
+                    <hr />
 
                 <button type="submit" className="btn btn-submit-form" id="btn-submit-form"> <IoPaperPlane/> Submit</button>
             </form>

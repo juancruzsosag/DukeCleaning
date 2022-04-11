@@ -10,7 +10,7 @@ export const FrequencyItem = ({title,img}) =>{
     return(
         <div id={"card-"+frequencyName} className="frequencyItem">
             <div className="frequencyContent">
-                <img src={img} />
+                <img src={img} alt={title}/>
                 <p className="frequencyTitle">{title}</p>
             </div>
         </div>
