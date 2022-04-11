@@ -1,32 +1,59 @@
-.navbar-header-row {
-  background-color: white;
-}
-
-
-.navbar-wpbutton {
-  height: 40px;
-  width: 120px;
-  left: 0px;
-  top: 0px;
-  border-radius: 60px;
-  padding: 12px, 22px, 12px, 22px;
-  background: #34c759;
-  border: #34c759;
-  .whatsapp-logo {
-    height: 19.51px;
+#Header {
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    height: auto;
   }
-}
-.navbar-callbutton {
-  height: 40px;
-  width: 120px;
-  left: 0px;
-  top: 0px;
-  border-radius: 60px;
-  padding: 12px, 22px, 12px, 22px;
-  background: #8b00a8;
-  border: #8b00a8;
-  .call-logo {
-    height: 19px;
+
+  .header-wpbutton {
+    height: 40px;
+    width: 120px;
+    left: 0px;
+    margin-right: 30px;
+    top: 0px;
+    border-radius: 60px;
+    padding: 12px, 22px, 12px, 22px;
+    background: #34c759;
+    border: #34c759;
+    &:hover {
+      animation: wpbutton-hover;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes wpbutton-hover {
+      0% {
+        background-color: #34c759;
+      }
+      100% {
+        background-color: #41826c;
+      }
+    }
+  }
+  .header-callbutton {
+    height: 40px;
+    width: 120px;
+    left: 0px;
+    top: 0px;
+    margin-right: 50px;
+    border-radius: 60px;
+    padding: 12px, 22px, 12px, 22px;
+    background: #8b00a8;
+    border: #8b00a8;
+    &:hover {
+      animation: callbutton-hover;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes callbutton-hover {
+      0% {
+        background-color: #8b00a8;
+      }
+      100% {
+        background-color: #68127a;
+      }
+    }
   }
 }
 
