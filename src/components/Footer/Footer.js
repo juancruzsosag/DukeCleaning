@@ -15,7 +15,7 @@ export const Footer = () => {
                 </div>
                 <div className="footer-text">
                     <p className="footer-text-line1"> Miami Beach.</p>
-                    <p className="footer-text-line2">786-553-2884 / 786250-7595</p>
+                    <p className="footer-text-line2">786-553-2884 / 786-250-7595</p>
                     <p className="footer-text-line3">dukecleaningmiami@gmail.com</p>
                 </div>
             </div>
