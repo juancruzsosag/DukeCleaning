@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.be4042b4.css",
-    "main.js": "/static/js/main.c0fabaad.js",
-    "static/js/787.a71a8805.chunk.js": "/static/js/787.a71a8805.chunk.js",
-    "static/media/formPhoto.svg": "/static/media/formPhoto.242e9eb01edbc3e478bf96875778fd03.svg",
-    "static/media/specialdeepclean.svg": "/static/media/specialdeepclean.4737b5961268fbc038cdd216f8f73619.svg",
-    "static/media/pressureclean.svg": "/static/media/pressureclean.99dc7efbb51ff099d6a39e395ac44674.svg",
-    "static/media/windowclean.svg": "/static/media/windowclean.ce529e64a9ac384d525effaad74b1fe3.svg",
-    "static/media/janitorial.svg": "/static/media/janitorial.450877711aaa253007e40b5aceb41bad.svg",
-    "static/media/postrefurbishing.svg": "/static/media/postrefurbishing.8f5e1f7f3381f0456f61b86382e12ab6.svg",
-    "static/media/messagelogo.svg": "/static/media/messagelogo.b0322011a901dd6aeeefd1bef8b3f317.svg",
-    "static/media/wpp-corner.svg": "/static/media/wpp-corner.43530725327fb98d40b5bd7b7c3730b6.svg",
-    "static/media/disinfection.svg": "/static/media/disinfection.2ade95ca2c3d736c5c7fd1bdb5b930a3.svg",
-    "static/media/TwoPerWeek.svg": "/static/media/TwoPerWeek.b4d6d9f2b0d3b3c9a2860060f45984ae.svg",
-    "static/media/TwoPerMonth.svg": "/static/media/TwoPerMonth.eb8f5495b2ecfae43a2bfa5a21f5658b.svg",
-    "static/media/Daily.svg": "/static/media/Daily.7ef0da74495dd16865c211d05fff4b06.svg",
-    "static/media/Weekly.svg": "/static/media/Weekly.ec1f108b3a298fc360e79d744740df85.svg",
-    "static/media/OneTime.svg": "/static/media/OneTime.ec4a41972c956b89ab9f4172ca43352c.svg",
-    "index.html": "/index.html",
-    "main.be4042b4.css.map": "/static/css/main.be4042b4.css.map",
-    "main.c0fabaad.js.map": "/static/js/main.c0fabaad.js.map",
-    "787.a71a8805.chunk.js.map": "/static/js/787.a71a8805.chunk.js.map"
+    "main.css": "/DukeCleaning/static/css/main.be4042b4.css",
+    "main.js": "/DukeCleaning/static/js/main.3f3e5b80.js",
+    "static/js/787.a71a8805.chunk.js": "/DukeCleaning/static/js/787.a71a8805.chunk.js",
+    "static/media/formPhoto.svg": "/DukeCleaning/static/media/formPhoto.242e9eb01edbc3e478bf96875778fd03.svg",
+    "static/media/specialdeepclean.svg": "/DukeCleaning/static/media/specialdeepclean.4737b5961268fbc038cdd216f8f73619.svg",
+    "static/media/pressureclean.svg": "/DukeCleaning/static/media/pressureclean.99dc7efbb51ff099d6a39e395ac44674.svg",
+    "static/media/windowclean.svg": "/DukeCleaning/static/media/windowclean.ce529e64a9ac384d525effaad74b1fe3.svg",
+    "static/media/janitorial.svg": "/DukeCleaning/static/media/janitorial.450877711aaa253007e40b5aceb41bad.svg",
+    "static/media/postrefurbishing.svg": "/DukeCleaning/static/media/postrefurbishing.8f5e1f7f3381f0456f61b86382e12ab6.svg",
+    "static/media/messagelogo.svg": "/DukeCleaning/static/media/messagelogo.b0322011a901dd6aeeefd1bef8b3f317.svg",
+    "static/media/wpp-corner.svg": "/DukeCleaning/static/media/wpp-corner.43530725327fb98d40b5bd7b7c3730b6.svg",
+    "static/media/disinfection.svg": "/DukeCleaning/static/media/disinfection.2ade95ca2c3d736c5c7fd1bdb5b930a3.svg",
+    "static/media/TwoPerWeek.svg": "/DukeCleaning/static/media/TwoPerWeek.b4d6d9f2b0d3b3c9a2860060f45984ae.svg",
+    "static/media/TwoPerMonth.svg": "/DukeCleaning/static/media/TwoPerMonth.eb8f5495b2ecfae43a2bfa5a21f5658b.svg",
+    "static/media/Daily.svg": "/DukeCleaning/static/media/Daily.7ef0da74495dd16865c211d05fff4b06.svg",
+    "static/media/Weekly.svg": "/DukeCleaning/static/media/Weekly.ec1f108b3a298fc360e79d744740df85.svg",
+    "static/media/OneTime.svg": "/DukeCleaning/static/media/OneTime.ec4a41972c956b89ab9f4172ca43352c.svg",
+    "index.html": "/DukeCleaning/index.html",
+    "main.be4042b4.css.map": "/DukeCleaning/static/css/main.be4042b4.css.map",
+    "main.3f3e5b80.js.map": "/DukeCleaning/static/js/main.3f3e5b80.js.map",
+    "787.a71a8805.chunk.js.map": "/DukeCleaning/static/js/787.a71a8805.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be4042b4.css",
-    "static/js/main.c0fabaad.js"
+    "static/js/main.3f3e5b80.js"
   ]
 }
