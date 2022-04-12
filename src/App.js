@@ -1,7 +1,6 @@
 import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.scss';
 
 import { Header } from './components/Header/Header';
 import { Title } from './components/Title/Title';
