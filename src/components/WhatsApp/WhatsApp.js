@@ -25,9 +25,9 @@ export const WhatsApp = () =>{
             <Modal show={show} onHide={handleClose} centered >
                 <Modal.Header >
                     <Modal.Title>
-                        <div className="d-flex flex-row justify-content-around align-content-center">
+                        <div id="modal-title-popup" className="">
                             <div className="">
-                                <a href="tel:17865532884" className="tel-link">786-553-2884</a>
+                                <a href="tel:+17865532884" className="tel-link">786-553-2884</a>
                                 <p className="tel-language">(ENGLISH)</p>
                             </div>
                             <div>
@@ -35,7 +35,7 @@ export const WhatsApp = () =>{
                             </div>
                             
                             <div>
-                                <a href="tel:17865460411" className="tel-link">786-546-0411</a>
+                                <a href="tel:+17865460411" className="tel-link">786-546-0411</a>
                                 <p className="tel-language">(ESPAÑOL)</p>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ export const WhatsApp = () =>{
                                 WhatsApp
                             </Button>
                         </a>
-                        <a href="tel:17865532884" data-rel="external" >
+                        <a href="tel:+17865532884" data-rel="external" >
                             <Button  id="btn-modal-call">
                                 <BsTelephoneFill className="btn-icon"/>
                                 Call us
