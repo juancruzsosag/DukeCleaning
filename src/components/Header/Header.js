@@ -12,16 +12,16 @@ export const Header = () => {
     <div className="header" id="Header">
       <div className="py-3 mx-0" id="container">
         <Row>
-          <Col className="mobile-display-none"></Col>
+          <Col id="mobile-display-none"></Col>
           <Col>
             <Navbar.Brand
               className="d-flex flex-row justify-content-center align-items-center"
               
             >
-              <img alt="duke-logo" src={DukeLogo} />
+              <img alt="duke-logo" src={DukeLogo} id="header-logo" />
             </Navbar.Brand>
           </Col>
-          <Col className="mobile-display-none">
+          <Col id="mobile-display-none">
             <div className="d-flex flex-row justify-content-end align-items-center">
               <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=17865532884&text=Hello,%20Duke%20Rey%20Cleaning!%0AI%20want%20to%20get%20some%20information%20about…" alt="Button redirects to Whatsapp">
                 <Button className="header-wpbutton me-1">

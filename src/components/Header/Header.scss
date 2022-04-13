@@ -4,10 +4,7 @@
     margin-right: 0 !important;
     height: auto;
   }
-  .mobile-display-none{
-    display: flex;
-    align-items: center;
-  }
+
   .header-wpbutton {
     height: 40px;
     width: 120px;
@@ -58,6 +55,13 @@
       }
     }
   }
+
+  #mobile-display-none{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 @media (max-width: 600px) {
@@ -78,9 +82,13 @@
       height: 39.14px;
       left: 56px;
       top: 5.93px;
-    }
+    } 
   }
-  .mobile-display-none {
-    display: none;
+  #header-logo{
+    width: 95% !important;
+  }
+
+  #mobile-display-none {
+    display: none !important;
   }
 }

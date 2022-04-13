@@ -14,6 +14,13 @@
     }   
 }
 
+#modal-title-popup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .modal-dialog-centered{
     justify-content: center !important;
 }
@@ -23,6 +30,10 @@
         border-left:    white 2px solid ;
         height:         50%;
         width:          2px;    
+    }
+
+    #modal-wpp-a{
+        margin-right: 8px;
     }
 
     a{
@@ -172,6 +183,18 @@
 // MEDIA QUERIES //
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width : 100px) and (max-device-width : 319px) {
+
+    .modal{
+        #modal-button-section{
+            width: 100% ;
+            flex-direction: column;
+        }
+
+        a{
+            width: 70%;
+            margin-bottom: 8px;
+        }
+    }
 
 }
 /* Smartphones (portrait and landscape) ----------- */

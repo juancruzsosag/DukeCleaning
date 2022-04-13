@@ -50,7 +50,7 @@ export const WhatsApp = () =>{
                     <p >We will reply as soon as possible</p>
 
                     <div className="" id="modal-button-section">
-                        <a href="https://api.whatsapp.com/send?phone=17865532884&text=Hello,%20Duke%20Rey%20Cleaning!%0AI%20want%20to%20get%20some%20information%20about…" className="me-2" target="_blank" rel="noreferrer">
+                        <a href="https://api.whatsapp.com/send?phone=17865532884&text=Hello,%20Duke%20Rey%20Cleaning!%0AI%20want%20to%20get%20some%20information%20about…" className="" id="modal-wpp-a" target="_blank" rel="noreferrer">
                             <Button  id="btn-modal-wpp">
                                 <RiWhatsappFill className="btn-icon"/>
                                 WhatsApp
