@@ -5,22 +5,23 @@ import Button from "react-bootstrap/Button";
 import { RiWhatsappFill } from "react-icons/ri";
 import { IoCall } from "react-icons/io5";
 import { Row, Col } from "react-bootstrap";
+import DukeLogo from "../../assets/images/thedukerey-logo.svg"
 
 export const Header = () => {
   return (
     <div className="header" id="Header">
       <div className="py-3 mx-0" id="container">
         <Row>
-          <Col className="display-none"></Col>
+          <Col className="mobile-display-none"></Col>
           <Col>
             <Navbar.Brand
               className="d-flex flex-row justify-content-center align-items-center"
               href="#"
             >
-              <img alt="duke-logo" src="./images/thedukerey-logo.svg" />
+              <img alt="duke-logo" src={DukeLogo} />
             </Navbar.Brand>
           </Col>
-          <Col className="display-none">
+          <Col className="mobile-display-none">
             <div className="d-flex flex-row justify-content-end align-items-center">
               <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=17865532884&text=Hello,%20Duke%20Rey%20Cleaning!%0AI%20want%20to%20get%20some%20information%20about…" alt="Button redirects to Whatsapp">
                 <Button className="header-wpbutton me-1">

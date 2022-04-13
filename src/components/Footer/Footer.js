@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import React from "react";
+import FooterLogo from "../../assets/images/thedukerey-logo-footer.svg"
 
 export const Footer = () => {
     return (
@@ -9,7 +10,7 @@ export const Footer = () => {
                 <div className="footer-img">
                     <img
                         className="d-block w-100 "
-                        src="./images/thedukerey-logo-footer.svg"
+                        src={FooterLogo}
                         alt="First slide"
                     />
                 </div>
