@@ -16,7 +16,7 @@ export const Header = () => {
           <Col>
             <Navbar.Brand
               className="d-flex flex-row justify-content-center align-items-center"
-              href="#"
+              
             >
               <img alt="duke-logo" src={DukeLogo} />
             </Navbar.Brand>
