@@ -30,7 +30,7 @@ export const Header = () => {
                   </div>
                 </Button>
               </a>
-              <a href="el:17865532884" data-rel="external" alt="Button redirects to call">
+              <a href="tel:+17865532884" data-rel="external" alt="Button redirects to call">
                 <Button className="header-callbutton">
                   <div className="button-content">
                     <IoCall /> Call us
