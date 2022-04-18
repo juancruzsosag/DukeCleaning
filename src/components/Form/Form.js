@@ -6,6 +6,7 @@ import { validateForm } from '../../helpers/validateForm';
 import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
 import Alert from 'react-bootstrap/Alert'
+import ReactTooltip from 'react-tooltip';
 init("ObIADgxeZKslCGMo_");
 
 
@@ -32,12 +33,6 @@ export const Form = () =>{
     }, [status]);
 
 
-    const numberRegExp = (number) =>{
-        let cleanNumber = parseInt(number.replace(/^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g));
-        console.log(cleanNumber)
-        return(isNaN(cleanNumber));
-    }
-
     const renderAlert = (variant) =>{
         let alertMessage;
     
@@ -61,22 +56,15 @@ export const Form = () =>{
             ...values,
             [e.target.name]: [e.target.value]
         }))
-
-        // if(!validateForm(values)){
-
-        // }
     };
 
     const sendEmail = (e) => {
         e.preventDefault();
-        let formIsValid = false;
-        // const fields = [values.name,values.lastName,values.email,values.phoneNumber,values.message];
-        // let fieldsIsValid = [false,false,false,false,false]
-        // // if (!validateForm(values)) {
-        // //     setStatus('danger');
-        // //     return
-        // //}
 
+        if(values.firstName=="" || values.lastName=="" || values.email=="" || values.phoneNumber=="" || values.message==""){
+            setStatus('danger');
+            return;
+        }
 
         emailjs.sendForm('pruebaEmail', 'template_test_duke', form.current,'ObIADgxeZKslCGMo_')
             .then(function(response) {
@@ -106,7 +94,8 @@ export const Form = () =>{
 
 
             <form onSubmit={sendEmail} ref={form} >
-                <p className="form-title">Get your cleaning quote</p>
+                <p className="form-title" data-tip="hello world">Get your cleaning quote</p>
+                <ReactTooltip effect="solid" place="right" />
                 {status && renderAlert(status)}
 
                     <input
@@ -123,7 +112,7 @@ export const Form = () =>{
                         type="text"
                         placeholder="Name"
                         onChange={handleInputChange}
-                        value={values.name}
+                        value={values.firstName}
                         required
                     />
                     <hr />
