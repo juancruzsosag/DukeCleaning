@@ -2,7 +2,6 @@ import "./Form.scss";
 import React , { useRef, useState, useEffect } from "react"; 
 import formPhoto from "../../assets/formPhoto.svg";
 import {IoPaperPlane} from "react-icons/io5";
-import { validateForm } from '../../helpers/validateForm';
 import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
 import Alert from 'react-bootstrap/Alert'
