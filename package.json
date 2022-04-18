@@ -19,6 +19,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
+    "react-tooltip": "^4.2.21",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -29,7 +30,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
