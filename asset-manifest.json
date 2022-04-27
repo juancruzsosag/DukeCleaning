@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DukeCleaning/static/css/main.95247747.css",
-    "main.js": "/DukeCleaning/static/js/main.55abad55.js",
+    "main.js": "/DukeCleaning/static/js/main.72a63eff.js",
     "static/js/787.a71a8805.chunk.js": "/DukeCleaning/static/js/787.a71a8805.chunk.js",
     "static/media/CoverPage1.jpg": "/DukeCleaning/static/media/CoverPage1.67422681e282714d2a3d.jpg",
     "static/media/CoverPage2.jpg": "/DukeCleaning/static/media/CoverPage2.35e0f474f4e55e807f37.jpg",
@@ -24,11 +24,11 @@
     "static/media/OneTime.svg": "/DukeCleaning/static/media/OneTime.7117a8ffebf87f7dff51a2dcce8934ed.svg",
     "index.html": "/DukeCleaning/index.html",
     "main.95247747.css.map": "/DukeCleaning/static/css/main.95247747.css.map",
-    "main.55abad55.js.map": "/DukeCleaning/static/js/main.55abad55.js.map",
+    "main.72a63eff.js.map": "/DukeCleaning/static/js/main.72a63eff.js.map",
     "787.a71a8805.chunk.js.map": "/DukeCleaning/static/js/787.a71a8805.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95247747.css",
-    "static/js/main.55abad55.js"
+    "static/js/main.72a63eff.js"
   ]
 }
