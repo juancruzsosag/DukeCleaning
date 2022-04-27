@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
 import Alert from 'react-bootstrap/Alert'
 import ReactTooltip from 'react-tooltip';
-init("ObIADgxeZKslCGMo_");
+init("J5vfSI3w2uoaYqGk8");
 
 
 export const Form = () =>{
@@ -65,7 +65,7 @@ export const Form = () =>{
             return;
         }
 
-        emailjs.sendForm('pruebaEmail', 'template_test_duke', form.current,'ObIADgxeZKslCGMo_')
+        emailjs.sendForm('DukeForm', 'template_form_duke', form.current,'J5vfSI3w2uoaYqGk8')
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 setValues({
